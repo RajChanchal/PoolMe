@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148A88A595719828240D7009 /* libPods-PoolMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 738A7F9AAC6A3C7E129F36E0 /* libPods-PoolMeTests.a */; };
 		278F029C210AB28000486093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F029B210AB28000486093 /* AppDelegate.m */; };
-		278F029F210AB28000486093 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F029E210AB28000486093 /* ViewController.m */; };
+		278F029F210AB28000486093 /* POIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F029E210AB28000486093 /* POIListViewController.m */; };
 		278F02A2210AB28000486093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278F02A0210AB28000486093 /* Main.storyboard */; };
 		278F02A4210AB28100486093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278F02A3210AB28100486093 /* Assets.xcassets */; };
 		278F02A7210AB28100486093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278F02A5210AB28100486093 /* LaunchScreen.storyboard */; };
 		278F02AA210AB28100486093 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02A9210AB28100486093 /* main.m */; };
 		278F02B4210AB28200486093 /* PoolMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02B3210AB28200486093 /* PoolMeTests.m */; };
 		278F02BF210AB28200486093 /* PoolMeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02BE210AB28200486093 /* PoolMeUITests.m */; };
+		278F02D1210B2E4F00486093 /* Poi.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02D0210B2E4F00486093 /* Poi.m */; };
+		278F02D6210B3C9600486093 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278F02D5210B3C9500486093 /* CoreLocation.framework */; };
+		278F02DB210B567C00486093 /* POIListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02DA210B567C00486093 /* POIListViewModel.m */; };
+		278F02E2210B577400486093 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02DE210B577400486093 /* APIClient.m */; };
+		278F02E3210B577400486093 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02E1210B577400486093 /* NetworkManager.m */; };
+		278F02E7210B588200486093 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02E5210B588200486093 /* Constants.m */; };
+		278F02EB210B6B8000486093 /* POICell.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02EA210B6B8000486093 /* POICell.m */; };
+		278F02EE210B6C1600486093 /* POICellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02ED210B6C1600486093 /* POICellViewModel.m */; };
+		A28C84B441D99B60A5EE66DD /* libPods-PoolMeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFAF4E446B4BF926E28738C /* libPods-PoolMeUITests.a */; };
+		EF845859D9432CA2A316CB83 /* libPods-PoolMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F08EEA9094406AFFCCA8B3CB /* libPods-PoolMe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FFAF4E446B4BF926E28738C /* libPods-PoolMeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PoolMeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		278F0297210AB28000486093 /* PoolMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278F029A210AB28000486093 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		278F029B210AB28000486093 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		278F029D210AB28000486093 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		278F029E210AB28000486093 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		278F029D210AB28000486093 /* POIListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POIListViewController.h; sourceTree = "<group>"; };
+		278F029E210AB28000486093 /* POIListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POIListViewController.m; sourceTree = "<group>"; };
 		278F02A1210AB28000486093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		278F02A3210AB28100486093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		278F02A6210AB28100486093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +63,29 @@
 		278F02BA210AB28200486093 /* PoolMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoolMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		278F02BE210AB28200486093 /* PoolMeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoolMeUITests.m; sourceTree = "<group>"; };
 		278F02C0210AB28200486093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278F02CF210B2E4F00486093 /* Poi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Poi.h; sourceTree = "<group>"; };
+		278F02D0210B2E4F00486093 /* Poi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Poi.m; sourceTree = "<group>"; };
+		278F02D5210B3C9500486093 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		278F02D9210B567C00486093 /* POIListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POIListViewModel.h; sourceTree = "<group>"; };
+		278F02DA210B567C00486093 /* POIListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POIListViewModel.m; sourceTree = "<group>"; };
+		278F02DD210B577400486093 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		278F02DE210B577400486093 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		278F02E0210B577400486093 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		278F02E1210B577400486093 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		278F02E5210B588200486093 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		278F02E6210B588200486093 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		278F02E9210B6B8000486093 /* POICell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POICell.h; sourceTree = "<group>"; };
+		278F02EA210B6B8000486093 /* POICell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POICell.m; sourceTree = "<group>"; };
+		278F02EC210B6C1600486093 /* POICellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POICellViewModel.h; sourceTree = "<group>"; };
+		278F02ED210B6C1600486093 /* POICellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POICellViewModel.m; sourceTree = "<group>"; };
+		738A7F9AAC6A3C7E129F36E0 /* libPods-PoolMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PoolMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FDEF2881C30359AD9E7F3A3 /* Pods-PoolMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMe/Pods-PoolMe.release.xcconfig"; sourceTree = "<group>"; };
+		96A674FAF96D960787ACAB9D /* Pods-PoolMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMeTests/Pods-PoolMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		AAC436762ACC5595CFF0C909 /* Pods-PoolMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMeUITests/Pods-PoolMeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB31B7E72B6C4736DD1C7E66 /* Pods-PoolMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMe/Pods-PoolMe.debug.xcconfig"; sourceTree = "<group>"; };
+		E7FFB599630F0529BE8979DE /* Pods-PoolMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMeTests/Pods-PoolMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9B4FA329C40BBA398EB4BA9 /* Pods-PoolMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMeUITests/Pods-PoolMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F08EEA9094406AFFCCA8B3CB /* libPods-PoolMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PoolMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278F02D6210B3C9600486093 /* CoreLocation.framework in Frameworks */,
+				EF845859D9432CA2A316CB83 /* libPods-PoolMe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148A88A595719828240D7009 /* libPods-PoolMeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +110,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A28C84B441D99B60A5EE66DD /* libPods-PoolMeUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2760EF3A210B7DDE00063484 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2760EF3F210B7E1E00063484 /* ViewModel */,
+				2760EF3B210B7DF800063484 /* View */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		2760EF3B210B7DF800063484 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2760EF3F210B7E1E00063484 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		278F028E210AB28000486093 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +147,8 @@
 				278F02B2210AB28200486093 /* PoolMeTests */,
 				278F02BD210AB28200486093 /* PoolMeUITests */,
 				278F0298210AB28000486093 /* Products */,
+				307CCC735540059A62BEFC89 /* Pods */,
+				2C96E11590DF749F9C338B5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +165,12 @@
 		278F0299210AB28000486093 /* PoolMe */ = {
 			isa = PBXGroup;
 			children = (
+				278F02E4210B588200486093 /* Constants */,
+				278F02CE210B2E1D00486093 /* Models */,
+				278F02CD210AB2E500486093 /* Networking */,
+				278F02CC210AB2CB00486093 /* ViewControllers */,
 				278F029A210AB28000486093 /* AppDelegate.h */,
 				278F029B210AB28000486093 /* AppDelegate.m */,
-				278F029D210AB28000486093 /* ViewController.h */,
-				278F029E210AB28000486093 /* ViewController.m */,
 				278F02A0210AB28000486093 /* Main.storyboard */,
 				278F02A3210AB28100486093 /* Assets.xcassets */,
 				278F02A5210AB28100486093 /* LaunchScreen.storyboard */,
@@ -132,6 +198,115 @@
 			path = PoolMeUITests;
 			sourceTree = "<group>";
 		};
+		278F02CC210AB2CB00486093 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2760EF3A210B7DDE00063484 /* MapViewController */,
+				278F02D8210B561E00486093 /* POIListViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		278F02CD210AB2E500486093 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				278F02DC210B577400486093 /* APIClient */,
+				278F02DF210B577400486093 /* NetworkManager */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		278F02CE210B2E1D00486093 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				278F02CF210B2E4F00486093 /* Poi.h */,
+				278F02D0210B2E4F00486093 /* Poi.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		278F02D7210B561100486093 /* POIListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				278F02D9210B567C00486093 /* POIListViewModel.h */,
+				278F02DA210B567C00486093 /* POIListViewModel.m */,
+				278F02EC210B6C1600486093 /* POICellViewModel.h */,
+				278F02ED210B6C1600486093 /* POICellViewModel.m */,
+			);
+			path = POIListViewModel;
+			sourceTree = "<group>";
+		};
+		278F02D8210B561E00486093 /* POIListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				278F02E8210B6B3700486093 /* View */,
+				278F02D7210B561100486093 /* POIListViewModel */,
+			);
+			path = POIListViewController;
+			sourceTree = "<group>";
+		};
+		278F02DC210B577400486093 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				278F02DD210B577400486093 /* APIClient.h */,
+				278F02DE210B577400486093 /* APIClient.m */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		278F02DF210B577400486093 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				278F02E0210B577400486093 /* NetworkManager.h */,
+				278F02E1210B577400486093 /* NetworkManager.m */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		278F02E4210B588200486093 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				278F02E5210B588200486093 /* Constants.m */,
+				278F02E6210B588200486093 /* Constants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		278F02E8210B6B3700486093 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				278F029D210AB28000486093 /* POIListViewController.h */,
+				278F029E210AB28000486093 /* POIListViewController.m */,
+				278F02E9210B6B8000486093 /* POICell.h */,
+				278F02EA210B6B8000486093 /* POICell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C96E11590DF749F9C338B5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				278F02D5210B3C9500486093 /* CoreLocation.framework */,
+				F08EEA9094406AFFCCA8B3CB /* libPods-PoolMe.a */,
+				738A7F9AAC6A3C7E129F36E0 /* libPods-PoolMeTests.a */,
+				1FFAF4E446B4BF926E28738C /* libPods-PoolMeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		307CCC735540059A62BEFC89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB31B7E72B6C4736DD1C7E66 /* Pods-PoolMe.debug.xcconfig */,
+				7FDEF2881C30359AD9E7F3A3 /* Pods-PoolMe.release.xcconfig */,
+				E7FFB599630F0529BE8979DE /* Pods-PoolMeTests.debug.xcconfig */,
+				96A674FAF96D960787ACAB9D /* Pods-PoolMeTests.release.xcconfig */,
+				E9B4FA329C40BBA398EB4BA9 /* Pods-PoolMeUITests.debug.xcconfig */,
+				AAC436762ACC5595CFF0C909 /* Pods-PoolMeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +314,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 278F02C3210AB28200486093 /* Build configuration list for PBXNativeTarget "PoolMe" */;
 			buildPhases = (
+				B6D4D96212B0F931CE9528B9 /* [CP] Check Pods Manifest.lock */,
 				278F0293210AB28000486093 /* Sources */,
 				278F0294210AB28000486093 /* Frameworks */,
 				278F0295210AB28000486093 /* Resources */,
@@ -156,6 +332,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 278F02C6210AB28200486093 /* Build configuration list for PBXNativeTarget "PoolMeTests" */;
 			buildPhases = (
+				89E1AFEC6653C53BA744DC18 /* [CP] Check Pods Manifest.lock */,
 				278F02AB210AB28200486093 /* Sources */,
 				278F02AC210AB28200486093 /* Frameworks */,
 				278F02AD210AB28200486093 /* Resources */,
@@ -174,6 +351,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 278F02C9210AB28200486093 /* Build configuration list for PBXNativeTarget "PoolMeUITests" */;
 			buildPhases = (
+				2C48E58AA3585D401941458E /* [CP] Check Pods Manifest.lock */,
 				278F02B6210AB28200486093 /* Sources */,
 				278F02B7210AB28200486093 /* Frameworks */,
 				278F02B8210AB28200486093 /* Resources */,
@@ -257,13 +435,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C48E58AA3585D401941458E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoolMeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E1AFEC6653C53BA744DC18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoolMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D4D96212B0F931CE9528B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoolMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		278F0293210AB28000486093 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				278F029F210AB28000486093 /* ViewController.m in Sources */,
+				278F02D1210B2E4F00486093 /* Poi.m in Sources */,
+				278F02E3210B577400486093 /* NetworkManager.m in Sources */,
+				278F02E2210B577400486093 /* APIClient.m in Sources */,
+				278F02EB210B6B8000486093 /* POICell.m in Sources */,
+				278F02E7210B588200486093 /* Constants.m in Sources */,
+				278F029F210AB28000486093 /* POIListViewController.m in Sources */,
 				278F02AA210AB28100486093 /* main.m in Sources */,
+				278F02EE210B6C1600486093 /* POICellViewModel.m in Sources */,
+				278F02DB210B567C00486093 /* POIListViewModel.m in Sources */,
 				278F029C210AB28000486093 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,38 +675,53 @@
 		};
 		278F02C4210AB28200486093 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB31B7E72B6C4736DD1C7E66 /* Pods-PoolMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3U7U6K4WE2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PoolMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		278F02C5210AB28200486093 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FDEF2881C30359AD9E7F3A3 /* Pods-PoolMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3U7U6K4WE2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PoolMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		278F02C7210AB28200486093 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7FFB599630F0529BE8979DE /* Pods-PoolMeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +740,7 @@
 		};
 		278F02C8210AB28200486093 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A674FAF96D960787ACAB9D /* Pods-PoolMeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +759,7 @@
 		};
 		278F02CA210AB28200486093 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B4FA329C40BBA398EB4BA9 /* Pods-PoolMeUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeUITests/Info.plist;
@@ -518,6 +777,7 @@
 		};
 		278F02CB210AB28200486093 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC436762ACC5595CFF0C909 /* Pods-PoolMeUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeUITests/Info.plist;
