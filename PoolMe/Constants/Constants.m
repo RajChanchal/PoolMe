@@ -9,7 +9,7 @@
 #import "Constants.h"
 const struct APIStruct API = {
     .home = @"home",
-    .hamburg = @"?p2Lat=53.394655&p1Lon=9.757589&p1Lat=53.694865&p2Lon=10.099891"
+    .hamburg = @""
 };
 //const struct ColorStruct Color = {
 //    .black = [UIColor blackColor]

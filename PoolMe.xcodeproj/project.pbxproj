@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		148A88A595719828240D7009 /* libPods-PoolMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 738A7F9AAC6A3C7E129F36E0 /* libPods-PoolMeTests.a */; };
+		2760EF42210B808D00063484 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760EF41210B808D00063484 /* MapViewController.swift */; };
+		2760EF45210B816F00063484 /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760EF44210B816F00063484 /* MapViewViewModel.swift */; };
 		278F029C210AB28000486093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F029B210AB28000486093 /* AppDelegate.m */; };
 		278F029F210AB28000486093 /* POIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F029E210AB28000486093 /* POIListViewController.m */; };
 		278F02A2210AB28000486093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278F02A0210AB28000486093 /* Main.storyboard */; };
@@ -47,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		1FFAF4E446B4BF926E28738C /* libPods-PoolMeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PoolMeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2760EF40210B808C00063484 /* PoolMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoolMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		2760EF41210B808D00063484 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2760EF44210B816F00063484 /* MapViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
 		278F0297210AB28000486093 /* PoolMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278F029A210AB28000486093 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		278F029B210AB28000486093 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -129,6 +134,7 @@
 		2760EF3B210B7DF800063484 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2760EF41210B808D00063484 /* MapViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,8 +142,17 @@
 		2760EF3F210B7E1E00063484 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2760EF44210B816F00063484 /* MapViewViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2760EF43210B80BB00063484 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2760EF40210B808C00063484 /* PoolMe-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		278F028E210AB28000486093 = {
@@ -165,6 +180,7 @@
 		278F0299210AB28000486093 /* PoolMe */ = {
 			isa = PBXGroup;
 			children = (
+				2760EF43210B80BB00063484 /* SupportingFiles */,
 				278F02E4210B588200486093 /* Constants */,
 				278F02CE210B2E1D00486093 /* Models */,
 				278F02CD210AB2E500486093 /* Networking */,
@@ -377,6 +393,7 @@
 				TargetAttributes = {
 					278F0296210AB28000486093 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 0940;
 					};
 					278F02AE210AB28200486093 = {
 						CreatedOnToolsVersion = 10.0;
@@ -497,11 +514,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2760EF42210B808D00063484 /* MapViewController.swift in Sources */,
 				278F02D1210B2E4F00486093 /* Poi.m in Sources */,
 				278F02E3210B577400486093 /* NetworkManager.m in Sources */,
 				278F02E2210B577400486093 /* APIClient.m in Sources */,
 				278F02EB210B6B8000486093 /* POICell.m in Sources */,
 				278F02E7210B588200486093 /* Constants.m in Sources */,
+				2760EF45210B816F00063484 /* MapViewViewModel.swift in Sources */,
 				278F029F210AB28000486093 /* POIListViewController.m in Sources */,
 				278F02AA210AB28100486093 /* main.m in Sources */,
 				278F02EE210B6C1600486093 /* POICellViewModel.m in Sources */,
@@ -678,6 +697,7 @@
 			baseConfigurationReference = CB31B7E72B6C4736DD1C7E66 /* Pods-PoolMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3U7U6K4WE2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -692,6 +712,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoolMe/SupportingFiles/PoolMe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -701,6 +724,7 @@
 			baseConfigurationReference = 7FDEF2881C30359AD9E7F3A3 /* Pods-PoolMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3U7U6K4WE2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -715,6 +739,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoolMe/SupportingFiles/PoolMe-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -723,6 +749,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7FFB599630F0529BE8979DE /* Pods-PoolMeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeTests/Info.plist;
@@ -742,6 +769,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96A674FAF96D960787ACAB9D /* Pods-PoolMeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeTests/Info.plist;
@@ -761,6 +789,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9B4FA329C40BBA398EB4BA9 /* Pods-PoolMeUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -779,6 +808,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AAC436762ACC5595CFF0C909 /* Pods-PoolMeUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

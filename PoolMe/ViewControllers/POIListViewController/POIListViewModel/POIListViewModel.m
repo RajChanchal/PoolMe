@@ -22,7 +22,7 @@
         NSLog(@"Fetched all messages.");
     }];
 }
--(POICellViewModel *)viewModelForCellAtIndex:(int)index{
+-(POICellViewModel *)viewModelForCellAtIndex:(NSInteger)index{
     return [[POICellViewModel alloc]initWithPOI: self.hamburgPOIs[index]];
 }
 @end

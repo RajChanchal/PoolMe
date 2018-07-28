@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface POIListViewModel : NSObject
 @property NSArray *hamburgPOIs;
 -(void)fetchHamburgPOIs;
--(POICellViewModel *)viewModelForCellAtIndex:(int)index;
+-(POICellViewModel *)viewModelForCellAtIndex:(NSInteger)index;
 @end
 
 NS_ASSUME_NONNULL_END
