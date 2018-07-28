@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		148A88A595719828240D7009 /* libPods-PoolMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 738A7F9AAC6A3C7E129F36E0 /* libPods-PoolMeTests.a */; };
 		2760EF42210B808D00063484 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760EF41210B808D00063484 /* MapViewController.swift */; };
 		2760EF45210B816F00063484 /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760EF44210B816F00063484 /* MapViewViewModel.swift */; };
 		278F029C210AB28000486093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F029B210AB28000486093 /* AppDelegate.m */; };
@@ -26,8 +25,9 @@
 		278F02E7210B588200486093 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02E5210B588200486093 /* Constants.m */; };
 		278F02EB210B6B8000486093 /* POICell.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02EA210B6B8000486093 /* POICell.m */; };
 		278F02EE210B6C1600486093 /* POICellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F02ED210B6C1600486093 /* POICellViewModel.m */; };
-		A28C84B441D99B60A5EE66DD /* libPods-PoolMeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFAF4E446B4BF926E28738C /* libPods-PoolMeUITests.a */; };
-		EF845859D9432CA2A316CB83 /* libPods-PoolMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F08EEA9094406AFFCCA8B3CB /* libPods-PoolMe.a */; };
+		42E6D6F40CF764CE97466CCC /* Pods_PoolMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A449AD8F524CC237F8A241B /* Pods_PoolMeUITests.framework */; };
+		783E15D3AC536C0BE4DA8929 /* Pods_PoolMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6972DD12987E585B306AD7B8 /* Pods_PoolMe.framework */; };
+		B2955E50FEB38FAA0C73C230 /* Pods_PoolMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24911B400A0D806FD0FE4CD9 /* Pods_PoolMeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FFAF4E446B4BF926E28738C /* libPods-PoolMeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PoolMeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A449AD8F524CC237F8A241B /* Pods_PoolMeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolMeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24911B400A0D806FD0FE4CD9 /* Pods_PoolMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2760EF40210B808C00063484 /* PoolMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoolMe-Bridging-Header.h"; sourceTree = "<group>"; };
 		2760EF41210B808D00063484 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2760EF44210B816F00063484 /* MapViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
@@ -83,14 +84,13 @@
 		278F02EA210B6B8000486093 /* POICell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POICell.m; sourceTree = "<group>"; };
 		278F02EC210B6C1600486093 /* POICellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POICellViewModel.h; sourceTree = "<group>"; };
 		278F02ED210B6C1600486093 /* POICellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POICellViewModel.m; sourceTree = "<group>"; };
-		738A7F9AAC6A3C7E129F36E0 /* libPods-PoolMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PoolMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6972DD12987E585B306AD7B8 /* Pods_PoolMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDEF2881C30359AD9E7F3A3 /* Pods-PoolMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMe/Pods-PoolMe.release.xcconfig"; sourceTree = "<group>"; };
 		96A674FAF96D960787ACAB9D /* Pods-PoolMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMeTests/Pods-PoolMeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AAC436762ACC5595CFF0C909 /* Pods-PoolMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMeUITests/Pods-PoolMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CB31B7E72B6C4736DD1C7E66 /* Pods-PoolMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMe/Pods-PoolMe.debug.xcconfig"; sourceTree = "<group>"; };
 		E7FFB599630F0529BE8979DE /* Pods-PoolMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMeTests/Pods-PoolMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9B4FA329C40BBA398EB4BA9 /* Pods-PoolMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoolMeUITests/Pods-PoolMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F08EEA9094406AFFCCA8B3CB /* libPods-PoolMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PoolMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				278F02D6210B3C9600486093 /* CoreLocation.framework in Frameworks */,
-				EF845859D9432CA2A316CB83 /* libPods-PoolMe.a in Frameworks */,
+				783E15D3AC536C0BE4DA8929 /* Pods_PoolMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				148A88A595719828240D7009 /* libPods-PoolMeTests.a in Frameworks */,
+				B2955E50FEB38FAA0C73C230 /* Pods_PoolMeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28C84B441D99B60A5EE66DD /* libPods-PoolMeUITests.a in Frameworks */,
+				42E6D6F40CF764CE97466CCC /* Pods_PoolMeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,9 +303,9 @@
 			isa = PBXGroup;
 			children = (
 				278F02D5210B3C9500486093 /* CoreLocation.framework */,
-				F08EEA9094406AFFCCA8B3CB /* libPods-PoolMe.a */,
-				738A7F9AAC6A3C7E129F36E0 /* libPods-PoolMeTests.a */,
-				1FFAF4E446B4BF926E28738C /* libPods-PoolMeUITests.a */,
+				6972DD12987E585B306AD7B8 /* Pods_PoolMe.framework */,
+				24911B400A0D806FD0FE4CD9 /* Pods_PoolMeTests.framework */,
+				1A449AD8F524CC237F8A241B /* Pods_PoolMeUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -334,6 +334,7 @@
 				278F0293210AB28000486093 /* Sources */,
 				278F0294210AB28000486093 /* Frameworks */,
 				278F0295210AB28000486093 /* Resources */,
+				BA59457943CB7A00D957D751 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -505,6 +506,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA59457943CB7A00D957D751 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PoolMe/Pods-PoolMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoolMe/Pods-PoolMe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -706,10 +729,7 @@
 				);
 				INFOPLIST_FILE = PoolMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PoolMe/SupportingFiles/PoolMe-Bridging-Header.h";
@@ -733,10 +753,7 @@
 				);
 				INFOPLIST_FILE = PoolMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PoolMe/SupportingFiles/PoolMe-Bridging-Header.h";
@@ -753,11 +770,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -773,11 +786,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -792,11 +801,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -811,11 +816,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

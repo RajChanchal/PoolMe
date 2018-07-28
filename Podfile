@@ -9,8 +9,8 @@ target 'PoolMe' do
   pod 'AFNetworking'
   pod 'ReactiveObjC'
   
-  #use_frameworks!
-  #pod 'RxSwift'
+  use_frameworks!
+  pod 'RxSwift'
   target 'PoolMeTests' do
     inherit! :search_paths
     # Pods for testing

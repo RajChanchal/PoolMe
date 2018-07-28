@@ -15,20 +15,24 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - ReactiveObjC (3.1.0)
+  - RxSwift (4.2.0)
 
 DEPENDENCIES:
   - AFNetworking
   - ReactiveObjC
+  - RxSwift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - ReactiveObjC
+    - RxSwift
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
 
-PODFILE CHECKSUM: 13f4698e9948c50ff61f4ce4947c995ef33c6ee1
+PODFILE CHECKSUM: 596efdb414f0366f0a39ca3e3caa2bf2d9399488
 
 COCOAPODS: 1.5.0
