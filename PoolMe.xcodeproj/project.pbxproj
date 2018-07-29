@@ -11,6 +11,8 @@
 		2760EF45210B816F00063484 /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760EF44210B816F00063484 /* MapViewViewModel.swift */; };
 		277563E0210DBAE5000A1042 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277563DF210DBAE5000A1042 /* APIClientTests.swift */; };
 		277563E3210DD5C0000A1042 /* PoiModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277563E2210DD5C0000A1042 /* PoiModelTests.swift */; };
+		277563E9210E010B000A1042 /* UIColor+GlobalColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 277563E8210E010B000A1042 /* UIColor+GlobalColors.m */; };
+		277563ED210E0881000A1042 /* PaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277563EC210E0881000A1042 /* PaddedLabel.swift */; };
 		278F029C210AB28000486093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F029B210AB28000486093 /* AppDelegate.m */; };
 		278F029F210AB28000486093 /* POIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F029E210AB28000486093 /* POIListViewController.m */; };
 		278F02A2210AB28000486093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278F02A0210AB28000486093 /* Main.storyboard */; };
@@ -58,6 +60,9 @@
 		277563DE210DBAE5000A1042 /* PoolMeTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoolMeTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		277563DF210DBAE5000A1042 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		277563E2210DD5C0000A1042 /* PoiModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiModelTests.swift; sourceTree = "<group>"; };
+		277563E7210E010B000A1042 /* UIColor+GlobalColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+GlobalColors.h"; sourceTree = "<group>"; };
+		277563E8210E010B000A1042 /* UIColor+GlobalColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GlobalColors.m"; sourceTree = "<group>"; };
+		277563EC210E0881000A1042 /* PaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedLabel.swift; sourceTree = "<group>"; };
 		278F0297210AB28000486093 /* PoolMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278F029A210AB28000486093 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		278F029B210AB28000486093 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -185,6 +190,32 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		277563E4210DFB3B000A1042 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				277563EB210E086A000A1042 /* PaddedLabel */,
+				277563EA210E0857000A1042 /* GlobalColors */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		277563EA210E0857000A1042 /* GlobalColors */ = {
+			isa = PBXGroup;
+			children = (
+				277563E7210E010B000A1042 /* UIColor+GlobalColors.h */,
+				277563E8210E010B000A1042 /* UIColor+GlobalColors.m */,
+			);
+			path = GlobalColors;
+			sourceTree = "<group>";
+		};
+		277563EB210E086A000A1042 /* PaddedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				277563EC210E0881000A1042 /* PaddedLabel.swift */,
+			);
+			path = PaddedLabel;
+			sourceTree = "<group>";
+		};
 		278F028E210AB28000486093 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +241,7 @@
 		278F0299210AB28000486093 /* PoolMe */ = {
 			isa = PBXGroup;
 			children = (
+				277563E4210DFB3B000A1042 /* Utilities */,
 				2760EF43210B80BB00063484 /* SupportingFiles */,
 				278F02E4210B588200486093 /* Constants */,
 				278F02CE210B2E1D00486093 /* Models */,
@@ -572,7 +604,9 @@
 			files = (
 				2760EF42210B808D00063484 /* MapViewController.swift in Sources */,
 				278F02D1210B2E4F00486093 /* Poi.m in Sources */,
+				277563E9210E010B000A1042 /* UIColor+GlobalColors.m in Sources */,
 				278F02E3210B577400486093 /* NetworkManager.m in Sources */,
+				277563ED210E0881000A1042 /* PaddedLabel.swift in Sources */,
 				278F02E2210B577400486093 /* APIClient.m in Sources */,
 				278F02EB210B6B8000486093 /* POICell.m in Sources */,
 				278F02E7210B588200486093 /* Constants.m in Sources */,

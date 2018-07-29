@@ -19,4 +19,10 @@
     }
     return self;
 }
+-(NSString *)fleetTypeInfo{
+    return self.poi.fleetType == FleetType_Taxi ? @"TAXI" : @"POOLING";
+}
+-(FleetType)fleetType{
+    return self.poi.fleetType;
+}
 @end

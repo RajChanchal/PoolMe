@@ -7,7 +7,10 @@
 //
 
 #import "POICell.h"
+#import "PoolMe-Swift.h"
+#import "UIColor+GlobalColors.h"
 @interface POICell()
+@property (weak, nonatomic) IBOutlet UILabel *lblFleetType;
 @property POICellViewModel *viewModel;
 @end
 @implementation POICell
@@ -25,7 +28,8 @@
 -(void)configure:(POICellViewModel*)viewModel{
     _viewModel = viewModel;
     //Assign UI VAlues with the help of viewmodel
-    
+    self.lblFleetType.text = self.viewModel.fleetTypeInfo;
+    self.lblFleetType.backgroundColor = [[UIColor alloc]initWithFleetType:self.viewModel.fleetType];
 }
 
 @end

@@ -9,20 +9,15 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef NS_ENUM(NSUInteger, FleetType) {
+    FleetType_Taxi = 1,
+    FleetType_Pooling = 2,
+};
 extern const struct APIStruct
 {
     __unsafe_unretained NSString *home;
     __unsafe_unretained NSString *hamburg;
 } API;
 
-//extern const struct ColorStruct{
-//    UIColor *black;
-//} Color;
-
-//@interface Constants : NSObject
-////extern NSString * const apiHome;
-////extern NSString * const apiFlashSale;
-//@end
 
 NS_ASSUME_NONNULL_END

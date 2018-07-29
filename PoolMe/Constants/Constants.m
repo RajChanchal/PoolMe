@@ -11,10 +11,3 @@ const struct APIStruct API = {
     .home = @"home",
     .hamburg = @""
 };
-//const struct ColorStruct Color = {
-//    .black = [UIColor blackColor]
-//};
-//@implementation Constants
-////NSString * const apiHome = @"home";
-////NSString * const apiFlashSale = @"flash";
-//@end

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface POICellViewModel : NSObject
 - (instancetype)initWithPOI:(Poi *)poi;
+-(NSString *)fleetTypeInfo;
+-(FleetType)fleetType;
 @end
 
 NS_ASSUME_NONNULL_END

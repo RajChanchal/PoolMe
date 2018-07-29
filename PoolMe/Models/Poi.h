@@ -7,15 +7,10 @@
 //
 
 #import <CoreLocation/CoreLocation.h>
+#import "Constants.h"
 NS_ASSUME_NONNULL_BEGIN
-//typedef enum : NSInteger {
-//    taxi,
-//    pooling
-//} FleetType;
-typedef NS_ENUM(NSUInteger, FleetType) {
-    FleetType_Taxi = 1,
-    FleetType_Pooling = 2,
-};
+//We could use NSString as well instead of NSUInteger, but if our app is going to be multi-lingual, integer makes more sense
+
 @interface Poi : NSObject
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, readonly) double heading;

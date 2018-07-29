@@ -13,7 +13,7 @@
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "POICell.h"
 
-@interface POIListViewController ()<UITableViewDataSource>
+@interface POIListViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tblView;
 @property (strong, nonatomic) POIListViewModel *viewModel;
 @end
@@ -35,6 +35,9 @@
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.viewModel.hamburgPOIs.count;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 101;
 }
 -(void)bindViewModel{
     self.viewModel = [POIListViewModel new];
