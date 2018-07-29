@@ -8,14 +8,18 @@
 
 #import <CoreLocation/CoreLocation.h>
 NS_ASSUME_NONNULL_BEGIN
-typedef enum : NSInteger {
-    taxi,
-    pooling
-} FleetType;
+//typedef enum : NSInteger {
+//    taxi,
+//    pooling
+//} FleetType;
+typedef NS_ENUM(NSUInteger, FleetType) {
+    FleetType_Taxi = 1,
+    FleetType_Pooling = 2,
+};
 @interface Poi : NSObject
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, readonly) double heading;
-@property (nonatomic, readonly) int poiID;
+@property (nonatomic, readonly) NSInteger poiID;
 @property (nonatomic, assign, readonly) FleetType fleetType;
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 @end

@@ -12,13 +12,13 @@
 - (id)initWithDictionary:(NSDictionary *)dictionary {
     self = [self init];
     if (self == nil) return nil;
-    
+    _poiID = [dictionary[@"id"]integerValue];
     _heading = [dictionary[@"heading"]doubleValue];
     NSString *fleetTypeValue = dictionary[@"fleetType"];
     if([fleetTypeValue isEqualToString:@"POOLING"]){
-        _fleetType = pooling;
+        _fleetType = FleetType_Pooling;
     }else{
-        _fleetType = taxi;
+        _fleetType = FleetType_Taxi;
     }
     double latitude = [dictionary[@"coordinate"][@"latitude"]doubleValue];
     double longitude = [dictionary[@"coordinate"][@"longitude"]doubleValue];

@@ -98,7 +98,15 @@ extension MapViewController:MKMapViewDelegate{
         if let annotationView = annotationView {
             
             annotationView.canShowCallout = true
-            annotationView.image = UIImage(named: "car")
+            if let poi = annotation as? Poi{
+                if poi.fleetType == FleetType.taxi{
+                    annotationView.image = UIImage(named: "car")
+                }else{
+                    annotationView.image = UIImage(named: "pool")
+                }
+                
+            }
+            
         }
         return annotationView
     }
@@ -126,6 +134,6 @@ extension MapViewController:CLLocationManagerDelegate{
 //MARK:-
 extension Poi:MKAnnotation{
     public var title: String? {
-        return "hehe"
+        return self.fleetType == FleetType.taxi ? "Taxi" : "Pooling"
     }
 }

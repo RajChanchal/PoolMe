@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2760EF42210B808D00063484 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760EF41210B808D00063484 /* MapViewController.swift */; };
 		2760EF45210B816F00063484 /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760EF44210B816F00063484 /* MapViewViewModel.swift */; };
+		277563E0210DBAE5000A1042 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277563DF210DBAE5000A1042 /* APIClientTests.swift */; };
+		277563E3210DD5C0000A1042 /* PoiModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277563E2210DD5C0000A1042 /* PoiModelTests.swift */; };
 		278F029C210AB28000486093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F029B210AB28000486093 /* AppDelegate.m */; };
 		278F029F210AB28000486093 /* POIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F029E210AB28000486093 /* POIListViewController.m */; };
 		278F02A2210AB28000486093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278F02A0210AB28000486093 /* Main.storyboard */; };
@@ -53,6 +55,9 @@
 		2760EF40210B808C00063484 /* PoolMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoolMe-Bridging-Header.h"; sourceTree = "<group>"; };
 		2760EF41210B808D00063484 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2760EF44210B816F00063484 /* MapViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
+		277563DE210DBAE5000A1042 /* PoolMeTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoolMeTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		277563DF210DBAE5000A1042 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		277563E2210DD5C0000A1042 /* PoiModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiModelTests.swift; sourceTree = "<group>"; };
 		278F0297210AB28000486093 /* PoolMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278F029A210AB28000486093 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		278F029B210AB28000486093 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,6 +160,31 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		277563DC210DBA9A000A1042 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				277563DD210DBAAE000A1042 /* API Client */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		277563DD210DBAAE000A1042 /* API Client */ = {
+			isa = PBXGroup;
+			children = (
+				277563DF210DBAE5000A1042 /* APIClientTests.swift */,
+				277563DE210DBAE5000A1042 /* PoolMeTests-Bridging-Header.h */,
+			);
+			path = "API Client";
+			sourceTree = "<group>";
+		};
+		277563E1210DD5A2000A1042 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				277563E2210DD5C0000A1042 /* PoiModelTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		278F028E210AB28000486093 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +229,8 @@
 		278F02B2210AB28200486093 /* PoolMeTests */ = {
 			isa = PBXGroup;
 			children = (
+				277563E1210DD5A2000A1042 /* Models */,
+				277563DC210DBA9A000A1042 /* Networking */,
 				278F02B3210AB28200486093 /* PoolMeTests.m */,
 				278F02B5210AB28200486093 /* Info.plist */,
 			);
@@ -398,6 +430,7 @@
 					};
 					278F02AE210AB28200486093 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						TestTargetID = 278F0296210AB28000486093;
 					};
 					278F02B9210AB28200486093 = {
@@ -556,7 +589,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277563E3210DD5C0000A1042 /* PoiModelTests.swift in Sources */,
 				278F02B4210AB28200486093 /* PoolMeTests.m in Sources */,
+				277563E0210DBAE5000A1042 /* APIClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,7 +764,10 @@
 				);
 				INFOPLIST_FILE = PoolMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PoolMe/SupportingFiles/PoolMe-Bridging-Header.h";
@@ -753,7 +791,10 @@
 				);
 				INFOPLIST_FILE = PoolMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PoolMe/SupportingFiles/PoolMe-Bridging-Header.h";
@@ -768,11 +809,20 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3U7U6K4WE2;
 				INFOPLIST_FILE = PoolMeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoolMeTests/Networking/API Client/PoolMeTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoolMe.app/PoolMe";
 			};
@@ -784,11 +834,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3U7U6K4WE2;
 				INFOPLIST_FILE = PoolMeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoolMeTests/Networking/API Client/PoolMeTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoolMe.app/PoolMe";
 			};
@@ -801,7 +859,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -816,7 +878,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PoolMeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PoolMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -21,7 +21,7 @@ static NSString * baseURL = @"https://fake-poi-api.mytaxi.com";
 }
 +(RACSignal *)fetchPOIsBetweenPoint1:(CLLocationCoordinate2D)point1 andPoint2:(CLLocationCoordinate2D)point2{
     return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        NSString *url = [self urlWithPoint1:point1 point2:point2];
+        NSString *url = [self urlWithBaseURL:baseURL Point1:point1 point2:point2];
         RACSignal *signal = [NetworkManager RACGetJsonFromUrl:url parameters:nil];
         [signal subscribeNext:^(id  _Nullable x) {
             //NSLog(@"Next: %@",x);
@@ -44,7 +44,7 @@ static NSString * baseURL = @"https://fake-poi-api.mytaxi.com";
     }];
 }
 
-+(NSString *)urlWithPoint1:(CLLocationCoordinate2D)point1 point2:(CLLocationCoordinate2D)point2{
++(NSString *)urlWithBaseURL:(NSString *)baseURL Point1:(CLLocationCoordinate2D)point1 point2:(CLLocationCoordinate2D)point2{
     return [[NSString alloc]initWithFormat:@"%@/?p2Lat=%f&p1Lon=%f&p1Lat=%f&p2Lon=%f",baseURL,point2.latitude,point1.longitude,point1.latitude,point2.longitude];
 }
 @end
