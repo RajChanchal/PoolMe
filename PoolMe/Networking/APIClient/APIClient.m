@@ -24,7 +24,6 @@ static NSString * baseURL = @"https://fake-poi-api.mytaxi.com";
         NSString *url = [self urlWithBaseURL:baseURL Point1:point1 point2:point2];
         RACSignal *signal = [NetworkManager RACGetJsonFromUrl:url parameters:nil];
         [signal subscribeNext:^(id  _Nullable x) {
-            //NSLog(@"Next: %@",x);
             NSArray *poisArray = x[@"poiList"];
             if(poisArray){
                 NSMutableArray *pois = [NSMutableArray new];
@@ -32,7 +31,6 @@ static NSString * baseURL = @"https://fake-poi-api.mytaxi.com";
                     Poi *poi = [[Poi alloc]initWithDictionary:poiDic];
                     [pois addObject:poi];
                 }
-                //NSLog(@"Total POIs %lu",(unsigned long)pois.count);
                 [subscriber sendNext:pois];
             }
         } error:^(NSError * _Nullable error) {

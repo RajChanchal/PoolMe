@@ -5,6 +5,9 @@
 //  Created by Chanchal Raj on 27/07/2018.
 //  Copyright © 2018 Chanchal Raj. All rights reserved.
 //
+//PS. The POIs API is fetching some dumy vehicles data on each API call, causing Vehicles to behave abnormly. If the data could have been real, it would have been more fun to see.
+//I really like the divide and conqure algorithm for map views to reduce API costs especially for large amounts of data. It is well-explained here well:
+//https://robots.thoughtbot.com/how-to-handle-large-amounts-of-data-on-maps
 
 import UIKit
 import MapKit
@@ -100,9 +103,14 @@ extension MapViewController:MKMapViewDelegate{
             annotationView.canShowCallout = true
             if let poi = annotation as? Poi{
                 if poi.fleetType == FleetType.taxi{
-                    annotationView.image = UIImage(named: "car")
+                    if let car = UIImage(named: "car"){
+                        annotationView.image = car.image(withRotation: CGFloat(poi.heading))
+                    }
+                    
                 }else{
-                    annotationView.image = UIImage(named: "pool")
+                    if let pool = UIImage(named: "pool"){
+                        annotationView.image = pool.image(withRotation: CGFloat(poi.heading))
+                    }
                 }
                 
             }
@@ -111,7 +119,6 @@ extension MapViewController:MKMapViewDelegate{
         return annotationView
     }
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        //print("region Changed!")
         fetchPOIs()
     }
 }
@@ -123,9 +130,7 @@ extension MapViewController:CLLocationManagerDelegate{
             let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
             let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
             self.mapView.setRegion(region, animated: false)
-            //self.fetchPOIs()
             manager.stopUpdatingLocation()
-            print("Location changed \(location.coordinate)")
             
         }
     }

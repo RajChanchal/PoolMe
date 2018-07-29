@@ -25,7 +25,6 @@ class MapViewViewModel {
         let signal = APIClient.fetchPOIsBetweenPoint1(point1, andPoint2: point2)
         signal.subscribeNext { (array) in
             if let pois = array as? Array<Poi>{
-                print("# of counts: \(pois.count)")
                 self.POIs.value = pois
             }
         }

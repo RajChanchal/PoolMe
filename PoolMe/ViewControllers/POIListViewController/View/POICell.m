@@ -11,6 +11,10 @@
 #import "UIColor+GlobalColors.h"
 @interface POICell()
 @property (weak, nonatomic) IBOutlet UILabel *lblFleetType;
+@property (weak, nonatomic) IBOutlet UIImageView *imgDriver;
+@property (weak, nonatomic) IBOutlet UILabel *lblDriverName;
+@property (weak, nonatomic) IBOutlet UILabel *lblCarName;
+
 @property POICellViewModel *viewModel;
 @end
 @implementation POICell
