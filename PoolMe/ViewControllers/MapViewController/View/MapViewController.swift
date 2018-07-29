@@ -46,6 +46,18 @@ class MapViewController:UIViewController{
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.requestWhenInUseAuthorization()
             locationManager.startUpdatingLocation()
+        }else{
+            //Show prompt to user to turn on location service
+            let alert = UIAlertController.init(title: "Turn on location services", message: "To show to nearest vehicles around, we need your location. Kindly turn the location services on in settings.", preferredStyle: .alert)
+            let actionSetting = UIAlertAction.init(title: "Open Settings", style: UIAlertActionStyle.cancel, handler: { (_) in
+                if let url = URL(string: UIApplicationOpenSettingsURLString) {
+                    UIApplication.shared.open(url, completionHandler: .none)
+                }
+            })
+            let cancel = UIAlertAction.init(title: "Cancel", style: UIAlertActionStyle.default, handler: nil)
+            alert.addAction(cancel)
+            alert.addAction(actionSetting)
+            self.show(alert, sender: self)
         }
     }
     /**
